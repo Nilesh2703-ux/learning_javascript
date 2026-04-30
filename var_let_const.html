@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fname = "Nilesh";
+        var fname = "Ajinkya"; //Re Declaration allow
+        fname = "Ram"; //Re - asign allow
+        document.write(fname + "<br>");
+
+        let lname = "Wadhave"
+        // let lname = "Bhosale" //re declaration not allow //syntax error
+        lname = "Bhosale" //re assign allow
+        
+        document.write( lname + "<br>");
+
+        const cname = "FCT";
+        // const cname = "TCS"; //re - declaration not allow
+        // cname = "TCS" //re assign not allow //type error
+        document.write(cname + "<br>")
+    </script>
+    <script>
+        if(10==10){
+            var x = "pune"; //global scope
+            let y = "hello"; //block or function scope
+            const z = "welcome to"; //block or function scope
+             document.write(" "+ y);
+              document.write(" "+ z);
+        }
+        document.write(" "+ x);
+    </script>
+</body>
+</html>
