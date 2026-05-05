@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- <style>
+            form{
+                width:800px;
+            }
+        </style> -->
+</head>
+
+<body>
+    <section>
+        <div class="container mt-4 ">
+            <h3>Arithmatic operation using function</h3>
+            <form class="p-4" name="myform">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="n1">Number 1</label>
+                        <input type="number" name="n1" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="row">
+                    <div class="col-md-4">
+                        <label for="n2">Number 2</label>
+                        <input type="number" name="n2" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="row mt-3">
+                    <div class="col-md-4 d-flex justify-content-evenly">
+                        <button type="button" onclick="add()">+</button>
+                        <button type="button" onclick="sub()">-</button>
+                        <button type="button" onclick="mul()">*</button>
+                        <button type="button" onclick="div()">/</button>
+                        <input type="reset">
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-md-4">
+                        <label for="res">Result</label>
+                        <input type="number" name="res" class="form-control" id="exampleFormControlInput1" disabled>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        var a,b,result;
+        function add(){
+            a =Number(document.myform.n1.value);
+            b =Number(document.myform.n2.value);
+            result=a+b;
+            document.myform.res.value=result.toFixed(2);
+        }
+          function sub(){
+            a=Number(document.myform.n1.value);
+            b=Number(document.myform.n2.value);
+            result=a-b;
+            document.myform.res.value=result.toFixed(2);
+        }
+          function mul(){
+            a=Number(document.myform.n1.value);
+            b=Number(document.myform.n2.value);
+            result=a*b;
+            document.myform.res.value=result.toFixed(2);
+        }
+          function div(){
+            a=Number(document.myform.n1.value);
+            b=Number(document.myform.n2.value);
+            result=a/b;
+            document.myform.res.value=result.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>
